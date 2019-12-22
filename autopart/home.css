@@ -1,0 +1,44 @@
+@import 'https://fonts.googleapis.com/css?family=Paprika';
+body {
+  background-color: lightblue;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.box{
+  text-align: center;
+  margin: auto;
+  padding :5px;
+}
+
+h1{
+  font-family: 'Paprika';
+  font-size: 4em;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(0, 140, 255);
+}
+
+.button {
+    background-color: rgb(11, 134, 235);
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 12px;
+    /* cursor: pointer; */
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    width: 250px;
+  }
+  
+  .button:hover {
+    background-color: rgb(40, 141, 224);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  /* .button:active {
+    background-color: rgb(40, 141, 224);
+    box-shadow: 0 5px rgb(158, 160, 160);
+    transform: translateY(4px);
+  } */

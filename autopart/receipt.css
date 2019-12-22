@@ -1,0 +1,147 @@
+/* .div_main{
+    width:9in;
+    height:11in;
+    margin: auto; /*ให้อยู่กลางจอ*/
+ /*} */
+ @import 'https://fonts.googleapis.com/css?family=Paprika';
+
+body {
+  background-color: lightblue;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-family: 'Paprika';
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(0, 140, 255);
+}
+
+label {
+    padding: 0 40px;
+    margin-bottom: 20px;
+    display: block;
+    float: left;
+    font-size: 1.75em;
+}
+
+input[type=text] {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.button {
+    background-color: rgb(11, 134, 235);
+    color: white;
+    padding: 10px 24px;
+    margin-left: 40px;
+    border: none;
+    border-radius: 12px;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    width: 180px;
+  }
+  
+  .button:hover {
+    background-color: rgb(40, 141, 224);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  /* bar */
+  body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #a1a1a1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+   
+  .sidebar a.active {
+    background-color: rgb(47, 146, 212);
+    color: white;
+    font-size: 16px;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  /* Table music */
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 8px;
+}
+
+#customers tr:nth-child(even)
+{
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(0, 33, 105);
+  color: white;
+}
+ /*ไม่แสดงปุ่มเวลาพิมพ์*/
+ @media noprint { 
+   img { 
+     display:none;
+   } 
+ }
+
