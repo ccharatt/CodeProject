@@ -1,0 +1,40 @@
+<!-- <h1 style="text-align:center">
+  ระบบการจัดการตารางสอนสำหรับ Admin
+</h1>
+<style>
+div{
+  width: 320px;
+  padding: 20px;
+  border: 5px solid gray;
+  margin: auto auto;
+  text-align:center;
+}
+</style>
+<div>
+  <h2>Login</h2>
+    Username :
+  <input name="username"type="text"id="username">
+  <h3></h3>
+    &nbsp;Password :
+    <input name="password"type="password"id="password">
+    <h4></h4>
+    <input type="submit"name="btnSubmit"value="  Login  ">
+</div> -->
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Lekton' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+  <div class="bg-img">
+      
+      <div class = "container">
+          <h1>Login </h1>
+        <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" [(ngModel)]="username" required >
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="password" required>
+      <button type="submit" class="btn" (click)="checkUser()" >Login</button>
+      </div> 
+  </div>
+  </body>
+ 
