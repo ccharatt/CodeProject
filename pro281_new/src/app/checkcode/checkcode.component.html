@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <body>
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="w3-bar w3-black">
+<button class="w3-bar-item w3-button" [routerLink] = "['/home']">Home</button>
+<button class="w3-bar-item w3-button" [routerLink] = "['/book']">จองตั๋วหนัง</button>
+<button class="w3-bar-item w3-button" [routerLink] = "['/payment']">Payment</button>
+<button class="w3-bar-item w3-button" [routerLink] = "['/printcode']">PrintCode</button>
+<button class="w3-bar-item w3-button" [routerLink] = "['/checkcode']">CheckCode</button>
+
+<button class="w3-bar-item w3-button w3-button w3-right" [routerLink] = "['/home']" (click) = "logout()" >กลับ</button>
+</div>
+
+      <div class="login-box">
+          <br /> 
+          <br /> 
+          <br /> 
+          <br /> 
+          <h1> กรุณากรอกรหัสตั๋วหนัง </h1>
+        
+            <div class="textbox">
+                <div class="container-4">
+                  <input type="search" id="search" placeholder="Input Code" [(ngModel)]="input"/>
+                  <button class="icon"><i class="fa fa-search" (click)="test()"></i>  </button>
+                  <!-- <input class="btn" (click)="findBin()"   type="button" name="" value="Find"> -->
+                </div>
+              </div>
+
+    
+
+  </div>
+  </body>

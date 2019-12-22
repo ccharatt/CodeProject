@@ -1,0 +1,183 @@
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" [routerLink] = "['/home']">Home</button>
+  <button class="w3-bar-item w3-button" [routerLink] = "['/book']">จองตั๋วหนัง</button>
+  <button class="w3-bar-item w3-button" [routerLink] = "['/payment']">Payment</button>
+  <button class="w3-bar-item w3-button" [routerLink] = "['/printcode']">PrintCode</button>
+  <button class="w3-bar-item w3-button" [routerLink] = "['/checkcode']">CheckCode</button>
+  
+  
+  
+</div>
+<br>
+<br>
+
+<p *ngFor="let c of list"> 
+      
+  &nbsp;&nbsp;&nbsp;&nbsp;idsit : {{ c.getidsit() }} &nbsp;&nbsp;status : {{ c.getstatus() }}
+  
+</p>
+<h2 align = 'center'>กรุณาเลือกที่นั่ง</h2>
+<div class="tab" class ="fullscreen-block"align="center">
+  <button class="tablinks" onclick="openCity(event, 'A1')"style = "background-color: #D27DD2">1</button>&nbsp;
+  <button class="tablinks" onclick="openCity(event, 'A2')"style = "background-color: #D27DD2">2</button>&nbsp;
+  <button class="tablinks" onclick="openCity(event, 'A3')"style = "background-color: #D27DD2">3</button>&nbsp;
+  <button class="tablinks" onclick="openCity(event, 'A4')"style = "background-color: #D27DD2">4</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="tablinks" onclick="openCity(event, 'A5')"style = "background-color: #D27DD2">5</button>&nbsp;
+  <button class="tablinks" onclick="openCity(event, 'A6')"style = "background-color: #D27DD2">6</button>&nbsp;
+  <button class="tablinks" onclick="openCity(event, 'A7')"style = "background-color: #D27DD2">7</button>&nbsp;
+  <button class="tablinks" onclick="openCity(event, 'A8')"style = "background-color: #D27DD2">8</button>&nbsp;
+</div>
+<br>
+<div class="tab" class ="fullscreen-block"align="center">
+  <button class="tablinks" onclick="openCity(event, 'B1')"style = "background-color: #D27DD2">9</button>&nbsp;
+ <button class="tablinks" onclick="openCity(event, 'B2')"style = "background-color: #D27DD2">10</button>&nbsp;
+ <button class="tablinks" onclick="openCity(event, 'B3')"style = "background-color: #D27DD2">11</button>&nbsp;
+  <button class="tablinks" onclick="openCity(event, 'B4')"style = "background-color: #D27DD2">12</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="tablinks" onclick="openCity(event, 'B5')"style = "background-color: #D27DD2">13</button>&nbsp;
+ <button class="tablinks" onclick="openCity(event, 'B6')"style = "background-color: #D27DD2">14</button>&nbsp;
+ <button class="tablinks" onclick="openCity(event, 'B7')"style = "background-color: #D27DD2">15</button>&nbsp;
+  <button class="tablinks" onclick="openCity(event, 'B8')"style = "background-color: #D27DD2">16</button>&nbsp;
+</div>
+<br>
+<div class="tab" class ="fullscreen-block"align="center">
+ <button class="tablinks" onclick="openCity(event, 'C1')"style = "background-color: #D27DD2">17</button>&nbsp;
+ <button class="tablinks" onclick="openCity(event, 'C2')"style = "background-color: #D27DD2">18</button>&nbsp;
+ <button class="tablinks" onclick="openCity(event, 'C3')"style = "background-color: #D27DD2">19</button>&nbsp;
+ <button class="tablinks" onclick="openCity(event, 'C4')"style = "background-color: #D27DD2">20</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <button class="tablinks" onclick="openCity(event, 'C5')"style = "background-color: #D27DD2">21</button>&nbsp;
+ <button class="tablinks" onclick="openCity(event, 'C6')"style = "background-color: #D27DD2">22</button>&nbsp;
+ <button class="tablinks" onclick="openCity(event, 'C7')"style = "background-color: #D27DD2">23</button>&nbsp;
+ <button class="tablinks" onclick="openCity(event, 'C8')"style = "background-color: #D27DD2">24</button>&nbsp;
+</div>
+<br>
+<br>
+<div class="tab" class ="fullscreen-block"align="center">
+    <button class="tablinks" onclick="openCity(event, 'D1')"style = "background-color: #1864AF">25</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'D2')"style = "background-color: #1864AF">26</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'D3')"style = "background-color: #1864AF">27</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'D4')"style = "background-color: #1864AF">28</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'D5')"style = "background-color: #1864AF">29</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'D6')"style = "background-color: #1864AF">30</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'D7')"style = "background-color: #1864AF">31</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'D8')"style = "background-color: #1864AF">32</button>&nbsp;
+</div>
+<br>
+<div class="tab" class ="fullscreen-block"align="center">
+    <button class="tablinks" onclick="openCity(event, 'E1')"style = "background-color: #1864AF">33</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'E2')"style = "background-color: #1864AF">34</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'E3')"style = "background-color: #1864AF">35</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'E4')"style = "background-color: #1864AF">36</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'E5')"style = "background-color: #1864AF">37</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'E6')"style = "background-color: #1864AF">38</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'E7')"style = "background-color: #1864AF">39</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'E8')"style = "background-color: #1864AF">40</button>&nbsp;
+</div>
+<br>
+<div class="tab" class ="fullscreen-block"align="center">
+    <button class="tablinks" onclick="openCity(event, 'F1')"style = "background-color: #1864AF">41</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'F2')"style = "background-color: #1864AF">42</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'F3')"style = "background-color: #1864AF">43</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'F4')"style = "background-color: #1864AF">44</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'F5')"style = "background-color: #1864AF">45</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'F6')"style = "background-color: #1864AF">46</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'F7')"style = "background-color: #1864AF">47</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'F8')"style = "background-color: #1864AF">48</button>&nbsp;
+</div>
+<br>
+<div class="tab" class ="fullscreen-block"align="center">
+    <button class="tablinks" onclick="openCity(event, 'G1')"style = "background-color: #1864AF">49</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'G2')"style = "background-color: #1864AF">50</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'G3')"style = "background-color: #1864AF">51</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'G4')"style = "background-color: #1864AF">52</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'G5')"style = "background-color: #1864AF">53</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'G6')"style = "background-color: #1864AF">54</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'G7')"style = "background-color: #1864AF">55</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'G8')"style = "background-color: #1864AF">56</button>&nbsp;
+</div>
+<br>
+<br>
+<div class="tab" class ="fullscreen-block"align="center">
+    <button class="tablinks" onclick="openCity(event, 'H1')"style = "background-color: #389450">57</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'H2')"style = "background-color: #389450">58</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'H3')"style = "background-color: #389450">59</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'H4')"style = "background-color: #389450">60</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'H5')"style = "background-color: #389450">61</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'H6')"style = "background-color: #389450">62</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'H7')"style = "background-color: #389450">63</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'H8')"style = "background-color: #389450">64</button>&nbsp;
+</div>
+<br>
+<div class="tab" class ="fullscreen-block"align="center">
+    <button class="tablinks" onclick="openCity(event, 'I1')"style = "background-color: #389450">65</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'I2')"style = "background-color: #389450">66</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'I3')"style = "background-color: #389450">67</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'I4')"style = "background-color: #389450">68</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'I5')"style = "background-color: #389450">69</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'I6')"style = "background-color: #389450">70</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'I7')"style = "background-color: #389450">71</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'I8')"style = "background-color: #389450">72</button>&nbsp;
+</div>
+<br>
+<div class="tab" class ="fullscreen-block"align="center">
+    <button class="tablinks" onclick="openCity(event, 'J1')"style = "background-color: #389450">73</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'J2')"style = "background-color: #389450">74</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'J3')"style = "background-color: #389450">75</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'J4')"style = "background-color: #389450">76</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'J5')"style = "background-color: #389450">77</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'J6')"style = "background-color: #389450">78</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'J7')"style = "background-color: #389450">79</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'J8')"style = "background-color: #389450">80</button>&nbsp;
+</div>
+<br>
+<br>
+<div class="tab" class ="fullscreen-block"align="center">
+    <button class="tablinks" onclick="openCity(event, 'K1')"style = "background-color: #BF7933">81</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'K2')"style = "background-color: #BF7933">82</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'K3')"style = "background-color: #BF7933">83</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'K4')"style = "background-color: #BF7933">84</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'K5')"style = "background-color: #BF7933">85</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'K6')"style = "background-color: #BF7933">86</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'K7')"style = "background-color: #BF7933">87</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'K8')"style = "background-color: #BF7933">88</button>&nbsp;
+</div>
+<br>
+<div class="tab" class ="fullscreen-block"align="center">
+    <button class="tablinks" onclick="openCity(event, 'L1')"style = "background-color: #BF7933">89</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'L2')"style = "background-color: #BF7933">90</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'L3')"style = "background-color: #BF7933">91</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'L4')"style = "background-color: #BF7933">92</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'L5')"style = "background-color: #BF7933">93</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'L6')"style = "background-color: #BF7933">94</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'L7')"style = "background-color: #BF7933">95</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'L8')"style = "background-color: #BF7933">96</button>&nbsp;
+</div>
+<br>
+<div class="tab" class ="fullscreen-block"align="center">
+    <button class="tablinks" onclick="openCity(event, 'M1')"style = "background-color: #BF7933">97</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'M2')"style = "background-color: #BF7933">98</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'M3')"style = "background-color: #BF7933">99</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'M4')"style = "background-color: #BF7933">100</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'M5')"style = "background-color: #BF7933">101</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'M6')"style = "background-color: #BF7933">102</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'M7')"style = "background-color: #BF7933">103</button>&nbsp;
+    <button class="tablinks" onclick="openCity(event, 'M8')"style = "background-color: #BF7933">104</button>&nbsp;
+</div>
+<br>
+
+<div class="row"></div>
+        <div class="right" style="background-color:rgba(224, 77, 8, 0.719);">
+          <h2 align = 'center'>พิมพ์รหัสที่นั่ง</h2>
+          <!-- <p align = 'center'>'เลือกหลายที่นั่งกรุณาใส่เครื่องหมาย','</p> -->
+          <input type="text" id="mySearch"  [(ngModel)]="input" onkeyup="checkbook()" placeholder="พิมพ์ที่นั่งของคุณที่นี่ ตัวอย่าง : A1,A2,A3,A6" title="Type in a category">
+          <button class="icon"><i class="fa fa-search" (click)="checkbook()"></i>  </button>
+        </div>  
+
+<div class="textbox">
+  <div class="container-4">
+ 
+    <!-- <input class="btn" (click)="findBin()"   type="button" name="" value="Find"> -->
+  </div>
+</div>

@@ -1,0 +1,75 @@
+  <!DOCTYPE html>
+  <html>
+   <body>
+  
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" [routerLink] = "['/home']">Home</button>
+  <button class="w3-bar-item w3-button" [routerLink] = "['/book']">จองตั๋วหนัง</button>
+  <button class="w3-bar-item w3-button" [routerLink] = "['/payment']">Payment</button>
+  <button class="w3-bar-item w3-button" [routerLink] = "['/printcode']">PrintCode</button>
+  <button class="w3-bar-item w3-button" [routerLink] = "['/checkcode']">CheckCode</button>
+  
+  <button class="w3-bar-item w3-button w3-button w3-right" [routerLink] = "['/login']" (click) = "logout()" >Logout</button>
+</div>
+
+
+        <div class="login-box">
+            <br /> 
+            <br /> 
+            <br /> 
+            <br /> 
+            <h1>Search Code</h1>
+             <!-- <div class="textbox">
+                <div class="container-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Search..."[(ngModel)]="input" />
+                </div>
+              </div>  -->
+              <!--  -->
+              <div class="textbox">
+                  <div class="container-4">
+                    <input type="search" id="search" placeholder="Please Input Cardnumber..." [(ngModel)]="input"/>
+                    <button class="icon"><i class="fa fa-search" (click)="test()"></i>  </button>
+                    <!-- <input class="btn" (click)="findBin()"   type="button" name="" value="Find"> -->
+                  </div>
+                </div>
+
+            <!-- <div class="textbox">
+              <div class="container-1">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="Input" name="" value="" [(ngModel)]="input">
+                 </div>
+            </div>  -->
+            <!-- <div>
+ 
+                <input class="chip"  type="button" name="" value="กระดาษ">    
+                <input class="chip"  type="button" name="" value="เปลือกผลไม้">
+                <input class="chip"  type="button" name="" value="ขวดน้ำ"> 
+                <input class="chip"  type="button" name="" value="โฟม">
+                <input class="chip"  type="button" name="" value="ขวดยา">
+                <input class="chip"  type="button" name="" value="เศษอาหาร">
+                <input class="chip"  type="button" name="" value="เศษเหล็ก">    
+                <input class="chip"  type="button" name="" value="ถ่านไฟฉาย">
+                <input class="chip"  type="button" name="" value="กระป๋องสีสเปรย์">
+                <input class="chip"  type="button" name="" value="ขยะเปียก "> 
+                <input class="chip"  type="button" name="" value="เศษกระจก">
+                <input class="chip"  type="button" name="" value="กระป๋องสารฆ่าแมลง">
+                <input class="chip"  type="button" name="" value="ถุงขนม">
+                <input class="chip"  type="button" name="" value="ไม้">  
+                <input class="chip"  type="button" name="" value="ถุงพลาสติก">
+                <input class="chip"  type="button" name="" value="พลาสติก"> 
+                
+               
+              </div> -->
+          
+    <!-- <input class="btn" (click)="findBin()"   type="button" name="" value="Find"> -->
+    <!-- <a [routerLink]="['/home']" class="btn">Login</a> -->
+  
+    </div>
+    </body>
+  
+  

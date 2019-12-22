@@ -1,0 +1,78 @@
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<!-- <link rel="stylesheet" href="payment.css"> -->
+<div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button" [routerLink] = "['/home']">Home</button>
+    <button class="w3-bar-item w3-button" [routerLink] = "['/book']">จองตั๋วหนัง</button>
+    <button class="w3-bar-item w3-button" [routerLink] = "['/payment']">Payment</button>
+    <button class="w3-bar-item w3-button" [routerLink] = "['/printcode']">PrintCode</button>
+    <button class="w3-bar-item w3-button" [routerLink] = "['/checkcode']">CheckCode</button>
+    
+    
+    
+  </div>
+<body>
+    <div class="ground">
+        <div class="col-75">
+            <div class="container">
+                <div class="ground">
+                    <div class="col-50">
+                        <!-- <form action="payment.php" method="post"> -->
+                    </div>
+                </div>
+                <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="total">Total : </label>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" [(ngModel)]="cardname" placeholder="Harry Potter">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" [(ngModel)]="cardnumber" value="" placeholder="1111222233334444">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" [(ngModel)]="cvv" placeholder="352">
+                        <div class="ground">
+                            <div class="col-50">
+                                <label for="expmonth">Exp Month</label>
+                                <p>
+                                    <select name = "month" id = "month">
+                                        <option value="0">January</option>
+                                        <option value="1">February</option>
+                                        <option value="2">March</option>
+                                        <option value="3">April</option>
+                                        <option value="4">May</option>
+                                        <option value="5">June</option>
+                                        <option value="6">July</option>
+                                        <option value="7">August</option>
+                                        <option value="8">September</option>
+                                        <option value="9">October</option>
+                                        <option value="10">November</option>
+                                        <option value="11">December</option>
+                                    </select>
+                                    </p>
+                            </div>
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <p>
+                                    <select name = "year" id = "year">
+                                        <option value="0">2017</option>
+                                        <option value="1">2018</option>
+                                        <option value="2">2019</option>
+                                        <option value="3">2020</option>
+                                        <option value="4">2021</option>
+                                        <option value="5">2022</option>
+                                        <option value="6">2023</option>
+                                        <option value="7">2024</option>
+                                        <option value="8">2025</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <br><br>
+                        </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="col-50">
+                <input type="submit" neme="submit" value="Continue" class="btn"(click)="input()" >
+            </div>
+        <!-- </form> -->
+        </div>
+    </div>
+</body>
